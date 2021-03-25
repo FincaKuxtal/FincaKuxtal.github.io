@@ -10,13 +10,13 @@ const estimate = [
 
 
 
-document.getElementById('appliances').addEventListener('click',updateAppliances);
+document.getElementById('appliances').addEventListener('change',updateAppliances);
 
 document.getElementById('bath').addEventListener('click',updateBath);
 
 document.getElementById('ac').addEventListener('click',updateAC);
 
-document.getElementById('solar').addEventListener('click',updateSolar);
+document.getElementById('solar').addEventListener('change',updateSolar);
 
 function updateAppliances(e) {
   estimate.splice(1,1,appliances(e))
@@ -66,6 +66,8 @@ function ac(e) {
       return['12000 BTU Split Unit', 1500]
     case 3:
       return['Ceiling Fans', 200]
+    default:
+      return []
   }
 }
 
