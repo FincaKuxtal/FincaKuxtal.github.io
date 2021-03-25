@@ -14,7 +14,7 @@ document.getElementById('appliances').addEventListener('change',updateAppliances
 
 document.getElementById('bath').addEventListener('click',updateBath);
 
-document.getElementById('ac').addEventListener('click',updateAC);
+document.getElementById('ac').addEventListener('change',updateAC);
 
 document.getElementById('solar').addEventListener('change',updateSolar);
 
