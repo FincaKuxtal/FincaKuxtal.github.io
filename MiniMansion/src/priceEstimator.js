@@ -33,6 +33,8 @@ function appliances(e) {
       return['Gas appliances', 1200]
     case 3:
       return['Buy your own appliances', 0]
+    default:
+      return[]
   }
 }
 
